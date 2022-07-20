@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function isPrime(number) {
+        let flag = true;
+        if (number < 2) {
+            return flag = false;
+        }
+        let i = 2;
+        while (i < number) {
+            if (number % i ==0) {
+                flag = false;
+                break;
+            } i++;
+        }return flag;
+    }
+    let number = +prompt("moi ban nhap so");
+    let check = isPrime(number);
+    if (check == true) {
+        alert(number + " la so nguyen to");
+    } else {
+        alert(number + " khong la so nguyen to");
+    }
+</script>
